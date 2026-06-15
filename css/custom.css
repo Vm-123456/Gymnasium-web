@@ -196,7 +196,7 @@ body {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 70px; height: 70px;
+    width: 100px; height: 100px;
     border-radius: 50%;
     background: rgba(157,178,191,0.9);
     display: flex;
