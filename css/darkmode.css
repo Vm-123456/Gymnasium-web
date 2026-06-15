@@ -1,0 +1,91 @@
+/* ============================================
+   DARK MODE — Color Hunt Palette
+   #27374D  #526D82  #9DB2BF  #DDE6ED
+============================================ */
+
+body.dark {
+    --bg: #1a1a2e;
+    --bg2: #16213e;
+    --text: #DDE6ED;
+    --text2: #9DB2BF;
+    --border: #2a3a50;
+    --input-bg: #1e2d42;
+    background: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+body.dark .bg-section,
+body.dark .card {
+    background: var(--bg2) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+body.dark .card-hover .card-img-overlay {
+    background: linear-gradient(transparent 50%, rgba(22,33,62,0.9));
+}
+
+body.dark .form-control,
+body.dark .form-select {
+    background: var(--input-bg) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+body.dark .form-control::placeholder { color: #6a7a8e; }
+body.dark .form-control:focus,
+body.dark .form-select:focus {
+    border-color: #9DB2BF !important;
+    box-shadow: 0 0 0 0.2rem rgba(157,178,191,0.2) !important;
+}
+
+body.dark .custom-radio-group .form-check {
+    border-color: var(--border);
+    color: var(--text);
+}
+
+body.dark .section-heading,
+body.dark .who-title,
+body.dark .form-title-text,
+body.dark .footer-cta-title {
+    color: #9DB2BF !important;
+}
+
+body.dark .text-body,
+body.dark .text-muted { color: var(--text2) !important; }
+body.dark .text-dark { color: var(--text) !important; }
+
+body.dark .list-group-item {
+    background: var(--bg2) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+body.dark .footer-cta-section { background: var(--bg2) !important; }
+body.dark .shadow { box-shadow: 0 8px 30px rgba(0,0,0,0.5) !important; }
+body.dark .form-success i { color: #9DB2BF; }
+
+/* === Dark Mode Toggle Button === */
+.dark-toggle {
+    position: fixed;
+    bottom: 25px; right: 25px;
+    z-index: 9999;
+    width: 55px; height: 55px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #27374D, #526D82);
+    color: #9DB2BF;
+    font-size: 1.4rem;
+    box-shadow: 0 5px 25px rgba(39,55,77,0.4);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dark-toggle:hover {
+    transform: scale(1.1) rotate(20deg);
+}
+body.dark .dark-toggle {
+    background: linear-gradient(135deg, #9DB2BF, #DDE6ED);
+    color: #27374D;
+}

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- NOTE: This page intentionally does not include any external ad scripts. -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>University Gymnasium Center | CSJMU Kanpur</title>
+    
+    <!-- Favicon -->    
+    <meta name="description"
+        content="University Gymnasium Center at CSJMU Kanpur offers modern fitness facilities, cardio training, strength training, sports activities, and membership programs for students and staff.">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- ===== DARK MODE TOGGLE ===== -->
+<button class="dark-toggle" id="darkToggle" aria-label="Toggle Dark Mode">
+    <i class="fas fa-moon"></i>
+</button>
+
+<!-- ==========================================================
+     NAVBAR (Bootstrap 5 Component)
+========================================================== -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container-fluid px-3">
+        <a class="navbar-brand fw-bold" href="./index.html">
+            <i class="fas fa-dumbbell me-2"></i>University Gymnasium Center
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-1">
+                <li class="nav-item"><a class="nav-link active" href="./index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+
+                <!-- About — DROPDOWN -->
+                <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-info-circle me-1"></i>About
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-custom">
+                        <li><a class="dropdown-item" href="./about.html"><i class="fas fa-gavel me-2"></i>Rules & Regulations</a></li>
+                        <li><a class="dropdown-item" href="./dos-donts.html"><i class="fas fa-clipboard-check me-2"></i>Do & Don'ts</a></li>
+                        <li><a class="dropdown-item" href="./membership.html"><i class="fas fa-rupee-sign me-2"></i>Membership Fee</a></li>
+                        <li><a class="dropdown-item" href="./open-close-time.html"><i class="fas fa-clock me-2"></i>Opening & Closing Time</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="./goto-membership.html"><i class="fas fa-id-card me-1"></i>Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="./facility.html"><i class="fas fa-cogs me-1"></i>Facilities</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact-us.html"><i class="fas fa-envelope me-1"></i>Contact</a></li>
+            </ul>
+        </div>
+   </div>
+</nav>
+
+<!-- ==========================================================
+     HERO SECTION
+========================================================== -->
+<section class="hero-section text-center mb-0" id="home">
+    <h2><i class="fas fa-dumbbell"></i> University Gymnasium Center</h2>
+    <p class="fs-5 mt-2">Chhatrapati Shahu Ji Maharaj University(CSJMU), Kanpur</p>
+</section>
+
+<!-- ==========================================================
+     BOOTSTRAP CAROUSEL (Image Slider — 5 Slides)
+========================================================== -->
+<section>
+    <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="4"></button>
+        </div>
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/build.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-overlay">
+                    <h2><i class="fas fa-fire"></i> Build Your Strength</h2>
+                    <p>35+ exercise machines and a mini Multi-Gym for students who aspire for physical well-being.</p>
+                </div>
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="./images/" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-overlay">
+                    <h2><i class="fas fa-dumbbell"></i> World-Class Equipment</h2>
+                    <p>State-of-the-art gym equipment for strength training, cardio, and functional fitness.</p>
+                </div>
+            </div> -->
+            <div class="carousel-item">
+                <img src="./images/healthwealth.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-overlay">
+                    <h2><i class="fas fa-heartbeat"></i> Health &amp; Wellness</h2>
+                    <p>Physical exertion results in endorphin production — the "feel good" hormones.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/trainers.jpg" class="d-block w-100" alt="Slide 4">
+                <div class="carousel-overlay">
+                    <h2><i class="fas fa-user-tie"></i> Expert Trainers</h2>
+                    <p>Guided by professional fitness trainers, physiotherapists, and nutritionists.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/join-us.png" class="d-block w-100" alt="Slide 5">
+                <!-- <div class="carousel-overlay">
+                    <h2><i class="fas fa-star"></i> Join Today!</h2>
+                    <p>Open for all students, faculty &amp; staff of CSJMU and affiliated colleges.</p>
+                </div> -->
+            </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+</section>
+
+<!-- ==========================================================
+     DEPARTMENT TITLE BAR
+========================================================== -->
+<div class="title-bar text-center py-3">
+    <h2 class="mb-0"><i class="fas fa-graduation-cap"></i> Department of Physical Education &amp; Sports</h2>
+</div>
+
+<!-- ==========================================================
+     ABOUT SECTION (Bootstrap Grid)
+========================================================== -->
+<section class="container my-5 fade-in" id="about">
+    <div class="row g-4 align-items-start bg-section shadow rounded-4 p-4">
+        <div class="col-lg-5">
+            <div class="quote-box rounded-3">
+                <img src="./images/vivekanand.png" class="img-fluid rounded-3" alt="Quote">
+                <!-- <div class="quote-overlay m-3">
+                    <i class="fas fa-quote-left"></i> "The world is the great gymnasium where we come to make ourselves strong."
+                </div> -->
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <h3 class="section-heading mb-3"><i class="fas fa-landmark text-accent"></i> About Our Gymnasium</h3>
+            <p class="text-body">Sports and Games are essential components, which help in building up a healthy intellectual life. The University has a well-equipped <strong>"Gymnasium"</strong> in the Campus with <strong>thirty-five exercise machines</strong> and a mini Multi-Gym for the students who aspire for physical well-being.</p>
+            <p class="text-body">Separate time slots have been assigned to <strong>male students, female students, teachers and staff</strong> for maximizing the utility of the gymnasia. Stimulating activity teaches valuable physical skills, sets a pattern of lifelong fitness.</p>
+            <p class="text-body">The gymnasia provide students with physical exercise consistently. It is particularly important for the well-being of students who have set aside physical activities after their school days.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     BENEFITS SECTION (Bootstrap Grid)
+========================================================== -->
+<!-- ==========================================================
+     BENEFITS SECTION (Bootstrap Grid + YouTube Video)
+========================================================== -->
+<section class="container mb-5 fade-in">
+    <div class="row g-4 align-items-center bg-section shadow rounded-4 p-4">
+        <!-- Text Content -->
+        <div class="col-lg-7">
+            <h3 class="section-heading mb-3">
+                <i class="fas fa-heartbeat text-danger"></i> Benefits of Gymnasium
+            </h3>
+            <p class="text-body">
+                A gymnasia workout features activities that raise the heart rate, 
+                increase the pulse rate and rev up metabolism. The physical exertion 
+                helps condition the mind — students can think more clearly and focus 
+                better following a good workout.
+            </p>
+            <p class="text-body">
+                The physical exertion results in <strong>endorphin production</strong> 
+                in the brain. Endorphins are the <strong>"feel good" hormones</strong> 
+                that improve mood and outlook.
+            </p>
+            <p class="text-body">
+                The physical activity becomes fun. The endorphins' effects allow 
+                students to proceed to their class feeling cheerful, relaxed and 
+                ready to focus on learning new ideas.
+            </p>
+        </div>
+
+        <!-- YouTube Video -->
+        <div class="col-lg-5">
+            <!--
+            The YouTube iframe below triggers analytics requests that are
+            blocked by common ad‑blocking extensions, resulting in the
+            `net::ERR_BLOCKED_BY_CLIENT` errors you saw in the console.
+            If you want to keep the video, simply uncomment the block and
+            ensure the user has disabled their ad blocker for this site.
+            Otherwise, comment it out to eliminate the errors.
+            -->
+            <!--
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/eBQMnPiT9RQ?si=fpgZ_XTdqlmtLQrA" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            -->
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     IMAGE GALLERY — 3 COLUMNS (Bootstrap Cards)
+========================================================== -->
+<!-- ==========================================================
+     IMAGE GALLERY — 4 COLUMNS (FIXED — Full Card + Rounded)
+========================================================== -->
+<!-- First facilities section (image gallery) -->
+<section class="container mb-5 fade-in" id="facilities">
+    <div class="row g-3">
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card card-hover shadow rounded-4 overflow-hidden border-0">
+                <img src="./images/strenght.jpg" class="card-img-top gallery-img" alt="Exercise Machine">
+                <div class="card-img-overlay d-flex align-items-end p-3">
+                    <span class="text-white fw-bold fs-6"><i class="fas fa-dumbbell"></i> Exercise Machine</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card card-hover shadow rounded-4 overflow-hidden border-0">
+                <img src="./images/tool.jpg" class="card-img-top gallery-img" alt="Weight Training">
+                <div class="card-img-overlay d-flex align-items-end p-3">
+                    <span class="text-white fw-bold fs-6"><i class="fas fa-dumbbell"></i> Weight Training</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card card-hover shadow rounded-4 overflow-hidden border-0">
+                <img src="./images/fitness.png" class="card-img-top gallery-img" alt="Multi-Gym">
+                <div class="card-img-overlay d-flex align-items-end p-3">
+                    <span class="text-white fw-bold fs-6"><i class="fas fa-dumbbell"></i> Multi-Gym</span>
+                </div>
+            </div>
+        </div>
+
+       
+
+    </div>
+</section>
+
+<!-- ==========================================================
+     WHO WILL GET BENEFITTED (Bootstrap List Group)
+========================================================== -->
+<section class="container mb-5 fade-in" id="membership">
+    <div class="row g-4 align-items-center bg-section shadow rounded-4 p-4">
+        <div class="col-lg-6">
+            <h2 class="who-title section-heading mb-4"><i class="fas fa-users"></i> Who will get benefitted?</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center gap-2 border-0 px-0">
+                    <i class="fas fa-check-circle text-accent fs-5"></i> All Students of University Campus &amp; its affiliated colleges
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-2 border-0 px-0">
+                    <i class="fas fa-check-circle text-accent fs-5"></i> Faculty / Staff member of the University &amp; its affiliated colleges
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <img src="./images/working.jpg" class="img-fluid rounded-3 shadow" alt="Benefits">
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     IMAGE GALLERY — 4 COLUMNS (Bootstrap Cards)
+========================================================== -->
+<!-- Second facilities gallery section – renamed to avoid duplicate ID -->
+<section class="container mb-5 fade-in" id="facilities-gallery">
+    <div class="row g-3">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-hover shadow rounded-3">
+                <img src="./images/machine1 (2).jpg" class="card-img-top" style="height:250px;object-fit:cover" alt="M1">
+                <div class="card-img-overlay"><span class="text-white fw-bold"><i class="fas fa-dumbbell"></i> Exercise Machine</span></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-hover shadow rounded-3">
+                <img src="./images/weight.jpg" class="card-img-top" style="height:250px;object-fit:cover" alt="M2">
+                <div class="card-img-overlay"><span class="text-white fw-bold"><i class="fas fa-dumbbell"></i> Weight Training</span></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-hover shadow rounded-3">
+                <img src="./images/multiple.jpg" class="card-img-top" style="height:250px;object-fit:cover" alt="M3">
+                <div class="card-img-overlay"><span class="text-white fw-bold"><i class="fas fa-dumbbell"></i> Multi-Gym</span></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-hover shadow rounded-3">
+                <img src="./images/cardio.jpg" class="card-img-top" style="height:250px;object-fit:cover" alt="M4">
+                <div class="card-img-overlay"><span class="text-white fw-bold"><i class="fas fa-dumbbell"></i> Cardio Zone</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     CTA BANNER
+========================================================== -->
+<section class="cta-banner text-center py-4 fade-in">
+    <p class="fs-5 fw-bold mb-3"><i class="fas fa-bullhorn"></i> Registrations opens for University Gymnasium Center</p>
+    <a href="#register" class="btn btn-cta btn-lg"><i class="fas fa-user-plus"></i> Join Now..! (Click here)</a>
+</section>
+
+<!-- ==========================================================
+     EQUIPMENT SECTION (Bootstrap Grid)
+========================================================== -->
+<section class="container my-5 fade-in">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="eq-card shadow">
+                <img src="./images/interior1.jpg" class="img-fluid w-100" alt="Interior 1">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="eq-card shadow">
+                <img src="./images/interior2.jpg" class="img-fluid w-100" alt="Interior 2">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     REGISTRATION FORM (Bootstrap Form Components)
+========================================================== -->
+<section class="container mb-5 fade-in" id="register">
+    <div class="bg-section shadow rounded-4 p-4 p-md-5">
+        <!-- Title -->
+        <div class="text-center mb-4">
+            <div class="form-icon-box"><i class="fas fa-clipboard-list"></i></div>
+            <h2 class="fw-bold form-title-text"><i class="fas fa-user-plus"></i> Gym Membership Registration</h2>
+            <p class="text-muted">Fill in your details below to register for the University Gymnasium Center</p>
+        </div>
+
+        <!-- Form -->
+        <form id="regForm" class="row g-3 needs-validation" novalidate>
+            <!-- Full Name -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-user text-accent"></i> Full Name *</label>
+                <input type="text" class="form-control" placeholder="Enter your full name" required>
+                <div class="invalid-feedback">Please enter your full name.</div>
+            </div>
+            <!-- Father's Name -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-user-friends text-accent"></i> Father's Name *</label>
+                <input type="text" class="form-control" placeholder="Enter father's name" required>
+                <div class="invalid-feedback">Please enter father's name.</div>
+            </div>
+            <!-- Mobile -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-phone text-accent"></i> Mobile Number *</label>
+                <input type="tel" class="form-control" placeholder="e.g. 9876543210" pattern="[0-9]{10}" required>
+                <div class="invalid-feedback">Enter a valid 10-digit number.</div>
+            </div>
+            <!-- Email -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-envelope text-accent"></i> Email *</label>
+                <input type="email" class="form-control" placeholder="yourname@example.com" required>
+                <div class="invalid-feedback">Enter a valid email.</div>
+            </div>
+            <!-- Course -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-graduation-cap text-accent"></i> Course / Department *</label>
+                <select class="form-select" required>
+                    <option value="" disabled selected>-- Select --</option>
+                    <option>B.Sc. Physical Education</option>
+                    <option>B.A.</option>
+                    <option>B.Sc.</option>
+                    <option>B.Com.</option>
+                    <option>B.Tech / Engineering</option>
+                    <option>M.A.</option>
+                    <option>M.Sc.</option>
+                    <option>M.Com.</option>
+                    <option>MBA</option>
+                    <option>Ph.D.</option>
+                    <option>Faculty / Teaching Staff</option>
+                    <option>Non-Teaching Staff</option>
+                    <option>Other</option>
+                </select>
+                <div class="invalid-feedback">Please select a course.</div>
+            </div>
+            <!-- Blood Group -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-tint text-accent"></i> Blood Group</label>
+                <select class="form-select">
+                    <option value="" disabled selected>-- Select --</option>
+                    <option>A+</option><option>A-</option>
+                    <option>B+</option><option>B-</option>
+                    <option>AB+</option><option>AB-</option>
+                    <option>O+</option><option>O-</option>
+                </select>
+            </div>
+            <!-- Category -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-id-badge text-accent"></i> Category *</label>
+                <div class="custom-radio-group">
+                    <div class="form-check"><input class="form-check-input" type="radio" name="category" id="c1" value="student" required><label class="form-check-label" for="c1">Student</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="category" id="c2" value="faculty"><label class="form-check-label" for="c2">Faculty</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="category" id="c3" value="staff"><label class="form-check-label" for="c3">Staff</label></div>
+                </div>
+            </div>
+            <!-- Gender -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-venus-mars text-accent"></i> Gender *</label>
+                <div class="custom-radio-group">
+                    <div class="form-check"><input class="form-check-input" type="radio" name="gender" id="g1" value="male" required><label class="form-check-label" for="g1">Male</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="gender" id="g2" value="female"><label class="form-check-label" for="g2">Female</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="gender" id="g3" value="other"><label class="form-check-label" for="g3">Other</label></div>
+                </div>
+            </div>
+            <!-- Transaction ID -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-receipt text-accent"></i> Payment Transaction ID *</label>
+                <input type="text" class="form-control" placeholder="Enter UPI / Bank Transaction ID" required>
+                <div class="invalid-feedback">Please enter transaction ID.</div>
+            </div>
+            <!-- Upload -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold"><i class="fas fa-camera text-accent"></i> Upload Payment Screenshot *</label>
+                <input type="file" class="form-control" accept="image/*" required>
+                <div class="invalid-feedback">Please upload screenshot.</div>
+            </div>
+            <!-- Submit -->
+            <div class="col-12 text-center mt-3">
+                <button type="submit" class="btn btn-submit"><i class="fas fa-paper-plane"></i> Submit Registration</button>
+            </div>
+        </form>
+
+        <!-- Success Message -->
+        <div class="form-success text-center py-5" id="formSuccess">
+            <i class="fas fa-check-circle d-block mb-3"></i>
+            <h3 class="fw-bold form-title-text">Registration Submitted Successfully!</h3>
+            <p class="text-muted">Thank you! You will receive a confirmation shortly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     FOOTER CTA (Bootstrap Flex)
+========================================================== -->
+<section class="footer-cta-section bg-section py-4 text-center shadow-sm fade-in" id="contact">
+    <h3 class="fw-bold mb-3 footer-cta-title" style="color:#27374D"><i class="fas fa-handshake"></i> Get involved and Join</h3>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="#" class="btn btn-c1 fw-semibold"><i class="fas fa-calendar-alt me-1"></i> Gym Schedule</a>
+        <a href="#" class="btn btn-c2 fw-semibold"><i class="fas fa-rupee-sign me-1"></i> Registration Fee</a>
+        <a href="#register" class="btn btn-c3 fw-semibold"><i class="fas fa-user-plus me-1"></i> Join (Register)</a>
+        <a href="#" class="btn btn-c4 fw-semibold"><i class="fas fa-phone-alt me-1"></i> Contact Us</a>
+    </div>
+</section>
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+<footer class="text-center py-3" style="background:#27374D;color:rgba(255,255,255,0.7);font-size:0.85rem">
+    <p class="mb-0">&copy; 2026 <span style="color:#9DB2BF">University Gymnasium Center</span> | Dept. of Physical Education &amp; Sports | CSJM University, Kanpur</p>
+</footer>
+
+<!-- Bootstrap 5.3 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/form.js"></script>
+<!-- Ensure carousel starts automatically on page load -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var carouselElement = document.getElementById('gymCarousel');
+    if (carouselElement) {
+        new bootstrap.Carousel(carouselElement, {
+            interval: 4000,
+            ride: 'carousel'
+        });
+    }
+});
+</script>
+
+</body>
+</html>
