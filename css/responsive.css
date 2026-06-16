@@ -34,6 +34,10 @@
     .carousel-control-prev-icon,
     .carousel-control-next-icon { width: 30px; height: 30px; }
 }
+/* Ensure hero section is at least 400px on very small screens */
+@media (max-width: 400px) {
+    .hero-section { min-height: 400px; }
+}
 /* General navbar adjustments for small screens */
 @media (max-width: 768px) {
     .navbar-brand { font-size: 1.2rem; }
